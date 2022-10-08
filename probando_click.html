@@ -13,8 +13,35 @@
     
     <input type="text" id="total">
     
+ 
+ 
+   <h3>Computadora Gamer i5</h3>
+    <img src="img/pc_gamer_1.png" width="150"/>
+    <h1></h1>
+    <input type="text" id="mostrador1">
+    <button id="boton3">+</button>
+    <button id="boton4">-</button>
+    
+    <input type="text" id="total1">
+
+
+  
+   <h3>Computadora Gamer i3</h3>
+    <img src="img/pc_gamer_1.png" width="150"/>
+    <h1></h1>
+    <input type="text" id="mostrador2">
+    <button id="boton5">+</button>
+    <button id="boton6">-</button>
+    
+    <input type="text" id="total2">
+
+
 <script>
    let numero = 0;
+   let numero1 = 0;
+   let numero2 = 0;
+   let total_general = 0;
+      
    boton1.onclick = () => {
         numero++;
         mostrador.value = numero;
@@ -22,10 +49,61 @@
    }
    
     boton2.onclick = () => {
-        numero--;
+        if (numero != 0) {
+        numero = numero - 1;
         mostrador.value = numero;
         total.value = numero * 2000;
+      }
    }
+
+
+   boton3.onclick = () => {
+        numero1++;
+        mostrador1.value = numero1;
+        total1.value = numero1 * 2000;
+   }
+   
+    boton4.onclick = () => {
+        if (numero1 != 0) {
+        numero1 = numero1 - 1;
+        mostrador1.value = numero1;
+        total1.value = numero1 * 2000;
+      }
+   }
+
+
+   boton5.onclick = () => {
+        numero2++;
+        mostrador.value = numero2;
+        total2.value = numero2 * 2000;
+   }
+   
+    boton6.onclick = () => {
+        if (numero2 != 0) {
+        numero2 = numero2 - 1;
+        mostrador2.value = numero2;
+        total2.value = numero2 * 2000;
+      }
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    
 </script>
 </body>
